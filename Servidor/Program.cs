@@ -1,8 +1,6 @@
-using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Servidor.Data;
 using Microsoft.OpenApi.Models;
-using Microsoft.Extensions.DependencyInjection; // Para obter o método CreateScope
 using FluentValidation.AspNetCore;
 using Servidor.Services;
 
@@ -20,6 +18,17 @@ builder.Services.AddScoped<IContratoDocumentoService, ContratoDocumentoService>(
 // Configurando o serviço de LOGS
 builder.Services.AddLogging();
 
+// Configurando o CORS para permitir acessos externos.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AngularApp",
+        policy =>
+        {
+            policy.WithOrigins("https://localhost:7001 , http://localhost:5183")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
 
 // Configurando o Swagger
 builder.Services.AddSwaggerGen(c =>
@@ -28,6 +37,8 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
+
+app.UseCors("AngularApp");
 
 // Escopo de serviço para obter uma instância de AppDbContext usando injeção de dependência
 using (var scope = app.Services.CreateScope())
