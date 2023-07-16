@@ -1,0 +1,294 @@
+Listagem de caminhos de pasta
+O n£mero de s‚rie do volume ‚ 56D9-1359
+C:.
+|   appsettings.Development.json
+|   appsettings.json
+|   Dockerfile
+|   estrutura.txt
+|   Program.cs
+|   Servidor.csproj
+|   Servidor.csproj.user
+|   Servidor.rar
+|   
++---bin
+|   \---Debug
+|       \---net6.0
+|           |   appsettings.Development.json
+|           |   appsettings.json
+|           |   Azure.Core.dll
+|           |   Azure.Identity.dll
+|           |   FluentValidation.AspNetCore.dll
+|           |   FluentValidation.DependencyInjectionExtensions.dll
+|           |   FluentValidation.dll
+|           |   Humanizer.dll
+|           |   Microsoft.AspNetCore.JsonPatch.dll
+|           |   Microsoft.Bcl.AsyncInterfaces.dll
+|           |   Microsoft.Data.SqlClient.dll
+|           |   Microsoft.Data.Sqlite.dll
+|           |   Microsoft.EntityFrameworkCore.Abstractions.dll
+|           |   Microsoft.EntityFrameworkCore.Design.dll
+|           |   Microsoft.EntityFrameworkCore.dll
+|           |   Microsoft.EntityFrameworkCore.Relational.dll
+|           |   Microsoft.EntityFrameworkCore.Sqlite.dll
+|           |   Microsoft.EntityFrameworkCore.SqlServer.dll
+|           |   Microsoft.Extensions.Caching.Abstractions.dll
+|           |   Microsoft.Extensions.Caching.Memory.dll
+|           |   Microsoft.Extensions.Configuration.Abstractions.dll
+|           |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+|           |   Microsoft.Extensions.DependencyInjection.dll
+|           |   Microsoft.Extensions.DependencyModel.dll
+|           |   Microsoft.Extensions.Logging.Abstractions.dll
+|           |   Microsoft.Extensions.Logging.dll
+|           |   Microsoft.Extensions.Options.dll
+|           |   Microsoft.Extensions.Primitives.dll
+|           |   Microsoft.Identity.Client.dll
+|           |   Microsoft.Identity.Client.Extensions.Msal.dll
+|           |   Microsoft.IdentityModel.Abstractions.dll
+|           |   Microsoft.IdentityModel.JsonWebTokens.dll
+|           |   Microsoft.IdentityModel.Logging.dll
+|           |   Microsoft.IdentityModel.Protocols.dll
+|           |   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+|           |   Microsoft.IdentityModel.Tokens.dll
+|           |   Microsoft.OpenApi.dll
+|           |   Microsoft.SqlServer.Server.dll
+|           |   Microsoft.Win32.SystemEvents.dll
+|           |   Mono.TextTemplating.dll
+|           |   Newtonsoft.Json.dll
+|           |   Servidor.deps.json
+|           |   Servidor.dll
+|           |   Servidor.exe
+|           |   Servidor.pdb
+|           |   Servidor.runtimeconfig.json
+|           |   Servidor.xml
+|           |   SQLitePCLRaw.batteries_v2.dll
+|           |   SQLitePCLRaw.core.dll
+|           |   SQLitePCLRaw.provider.e_sqlite3.dll
+|           |   Swashbuckle.AspNetCore.Swagger.dll
+|           |   Swashbuckle.AspNetCore.SwaggerGen.dll
+|           |   Swashbuckle.AspNetCore.SwaggerUI.dll
+|           |   System.CodeDom.dll
+|           |   System.Configuration.ConfigurationManager.dll
+|           |   System.Drawing.Common.dll
+|           |   System.IdentityModel.Tokens.Jwt.dll
+|           |   System.Memory.Data.dll
+|           |   System.Runtime.Caching.dll
+|           |   System.Security.Cryptography.ProtectedData.dll
+|           |   System.Security.Permissions.dll
+|           |   System.Text.Encodings.Web.dll
+|           |   System.Text.Json.dll
+|           |   System.Windows.Extensions.dll
+|           |   
+|           \---runtimes
+|               +---alpine-arm
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---alpine-arm64
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---alpine-x64
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---browser
+|               |   \---lib
+|               |       \---net6.0
+|               |               System.Text.Encodings.Web.dll
+|               |               
+|               +---browser-wasm
+|               |   \---nativeassets
+|               |       \---net6.0
+|               |               e_sqlite3.a
+|               |               
+|               +---linux-arm
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-arm64
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-armel
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-mips64
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-musl-arm
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-musl-arm64
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-musl-x64
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-ppc64le
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-s390x
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-x64
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---linux-x86
+|               |   \---native
+|               |           libe_sqlite3.so
+|               |           
+|               +---maccatalyst-arm64
+|               |   \---native
+|               |           libe_sqlite3.dylib
+|               |           
+|               +---maccatalyst-x64
+|               |   \---native
+|               |           libe_sqlite3.dylib
+|               |           
+|               +---osx-arm64
+|               |   \---native
+|               |           libe_sqlite3.dylib
+|               |           
+|               +---osx-x64
+|               |   \---native
+|               |           libe_sqlite3.dylib
+|               |           
+|               +---unix
+|               |   \---lib
+|               |       +---netcoreapp3.0
+|               |       |       System.Drawing.Common.dll
+|               |       |       
+|               |       \---netcoreapp3.1
+|               |               Microsoft.Data.SqlClient.dll
+|               |               
+|               +---win
+|               |   \---lib
+|               |       +---netcoreapp3.0
+|               |       |       Microsoft.Win32.SystemEvents.dll
+|               |       |       System.Drawing.Common.dll
+|               |       |       System.Windows.Extensions.dll
+|               |       |       
+|               |       +---netcoreapp3.1
+|               |       |       Microsoft.Data.SqlClient.dll
+|               |       |       
+|               |       \---netstandard2.0
+|               |               System.Runtime.Caching.dll
+|               |               System.Security.Cryptography.ProtectedData.dll
+|               |               
+|               +---win-arm
+|               |   \---native
+|               |           e_sqlite3.dll
+|               |           Microsoft.Data.SqlClient.SNI.dll
+|               |           
+|               +---win-arm64
+|               |   \---native
+|               |           e_sqlite3.dll
+|               |           Microsoft.Data.SqlClient.SNI.dll
+|               |           
+|               +---win-x64
+|               |   \---native
+|               |           e_sqlite3.dll
+|               |           Microsoft.Data.SqlClient.SNI.dll
+|               |           
+|               \---win-x86
+|                   \---native
+|                           e_sqlite3.dll
+|                           Microsoft.Data.SqlClient.SNI.dll
+|                           
++---Controllers
+|       ContratosController.cs
+|       DocumentoControler.cs
+|       
++---Data
+|   |   ContratoContext.cs
+|   |   contratos.db
+|   |   
+|   \---UploadsContratos
+|       +---1
+|       |       Prezados.pdf
+|       |       
+|       \---6
+|               11862726_11399767.pdf
+|               COMPROVANTE PEDIDO CAEL PAUTA.pdf
+|               
++---DTOs
+|       ContratoCreateDto.cs
+|       ContratoCreateDtoTests.cs
+|       ContratoUpdateDto.cs
+|       
++---Migrations
+|       20230713032756_InitialCreate.cs
+|       20230713032756_InitialCreate.Designer.cs
+|       20230713041624_MetadadosDocumento.cs
+|       20230713041624_MetadadosDocumento.Designer.cs
+|       AppDbContextModelSnapshot.cs
+|       
++---Models
+|       Contrato.cs
+|       Documento.cs
+|       
++---obj
+|   |   project.assets.json
+|   |   project.nuget.cache
+|   |   Servidor.csproj.EntityFrameworkCore.targets
+|   |   Servidor.csproj.nuget.dgspec.json
+|   |   Servidor.csproj.nuget.g.props
+|   |   Servidor.csproj.nuget.g.targets
+|   |   
+|   +---Container
+|   |       ContainerDevelopmentMode.cache
+|   |       ContainerId.cache
+|   |       ContainerName.cache
+|   |       ContainerRunContext.cache
+|   |       
+|   \---Debug
+|       \---net6.0
+|           |   .NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+|           |   apphost.exe
+|           |   Servidor.AssemblyInfo.cs
+|           |   Servidor.AssemblyInfoInputs.cache
+|           |   Servidor.assets.cache
+|           |   Servidor.csproj.AssemblyReference.cache
+|           |   Servidor.csproj.BuildWithSkipAnalyzers
+|           |   Servidor.csproj.CopyComplete
+|           |   Servidor.csproj.CoreCompileInputs.cache
+|           |   Servidor.csproj.FileListAbsolute.txt
+|           |   Servidor.dll
+|           |   Servidor.GeneratedMSBuildEditorConfig.editorconfig
+|           |   Servidor.genruntimeconfig.cache
+|           |   Servidor.GlobalUsings.g.cs
+|           |   Servidor.MvcApplicationPartsAssemblyInfo.cache
+|           |   Servidor.MvcApplicationPartsAssemblyInfo.cs
+|           |   Servidor.pdb
+|           |   Servidor.xml
+|           |   staticwebassets.build.json
+|           |   
+|           +---ref
+|           |       Servidor.dll
+|           |       
+|           +---refint
+|           |       Servidor.dll
+|           |       
+|           \---staticwebassets
+|                   msbuild.build.Servidor.props
+|                   msbuild.buildMultiTargeting.Servidor.props
+|                   msbuild.buildTransitive.Servidor.props
+|                   
++---Properties
+|       launchSettings.json
+|       
++---Services
+|       DocumentoService.cs
+|       
+\---Validators
+        ContratoUpdateDtoValidator.cs
+        ContratoValidator.cs
+        

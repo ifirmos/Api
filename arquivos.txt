@@ -1,0 +1,45 @@
+Listagem de caminhos de pasta
+O n£mero de s‚rie do volume ‚ 00000060 56D9:1359
+C:\USERS\SANTANA\DESKTOP\APICONTRATOS\SERVIDOR
+|   appsettings.Development.json
+|   appsettings.json
+|   Dockerfile
+|   estrutura_de_pastas.txt
+|   Program.cs
+|   Servidor.csproj
+|   Servidor.csproj.user
+
++---Controllers
+|       ContratosController.cs
+|       DocumentoControler.cs
+|       
++---Data
+|   |   ContratoContext.cs
+|   |   contratos.db
+|   |   
+|   \---UploadsContratos
+
++---DTOs
+|       ContratoCreateDto.cs
+|       ContratoCreateDtoTests.cs
+|       
++---Files
++---Migrations
+
+|       
++---Models
+|       Contrato.cs
+|       Documento.cs
+|       
++---obj
+                 
++---Properties
+|       launchSettings.json
+|       
++---Services
+|       DocumentoService.cs
+|       FileService.cs
+|       
+\---Validators
+        ContratoValidator.cs
+        
