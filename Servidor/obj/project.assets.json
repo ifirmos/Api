@@ -4512,11 +4512,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Santana\\Desktop\\ApiContratos\\Servidor\\Servidor.csproj",
+      "projectUniqueName": "C:\\Users\\Santana\\Desktop\\VERSÃO_FINAL_ApiContratos\\ApiContratos\\Servidor\\Servidor.csproj",
       "projectName": "Servidor",
-      "projectPath": "C:\\Users\\Santana\\Desktop\\ApiContratos\\Servidor\\Servidor.csproj",
+      "projectPath": "C:\\Users\\Santana\\Desktop\\VERSÃO_FINAL_ApiContratos\\ApiContratos\\Servidor\\Servidor.csproj",
       "packagesPath": "C:\\Users\\Santana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Santana\\Desktop\\ApiContratos\\Servidor\\obj\\",
+      "outputPath": "C:\\Users\\Santana\\Desktop\\VERSÃO_FINAL_ApiContratos\\ApiContratos\\Servidor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Santana\\AppData\\Roaming\\NuGet\\NuGet.Config",

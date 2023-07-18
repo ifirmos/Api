@@ -1,6 +1,8 @@
 # Api
 Projeto de Api Mínima com Controlador em Asp Net Core + Aplicação FrontEnd Angular
 
+=======
+>>>>>>> 4803a68 (Inicial)
 # Manual de Instruções do Projeto
 
 Este manual fornece instruções detalhadas sobre como configurar o ambiente de desenvolvimento para o backend e o frontend, restaurar as dependências e compilar o código-fonte.
@@ -34,7 +36,7 @@ O servidor de desenvolvimento estará disponível nos seguintes endereços:
 
 ### Passos
 
-1. Clone o repositório do projeto para o seu ambiente local (se ainda não o fez).
+1. Clone o repositório do projeto para o seu ambiente local.
 2. Navegue até a pasta do projeto frontend no terminal.
 3. Restaure as dependências do projeto executando o comando `npm install`.
 4. Inicie o servidor de desenvolvimento executando o comando `npm start` ou `ng serve`.
@@ -47,13 +49,17 @@ O servidor de desenvolvimento estará disponível no seguinte endereço:
 
 A API possui as seguintes rotas:
 
-1. `POST /contratos`: Cria um novo contrato.
-2. `GET /contratos`: Retorna uma lista de todos os contratos.
-3. `GET /contratos/{id}`: Retorna um contrato específico pelo ID.
-4. `PATCH /contratos/{id}`: Atualiza um contrato específico pelo ID.
-5. `DELETE /contratos/{id}`: Exclui um contrato específico pelo ID.
-6. `POST /documentos`: Faz o upload de um documento PDF relacionado a um contrato.
-7. `GET /documentos/{id}`: Faz o download de um documento PDF relacionado a um contrato pelo ID.
+1.	POST /api/Contratos: Cria um novo contrato.
+2.	GET /api/Contratos: Retorna uma lista de todos os contratos.
+3.	GET /api/Contratos/{id}: Retorna um contrato específico pelo ID.
+4.	PUT /api/Contratos/{id}: Atualiza um contrato específico pelo ID.
+5.	DELETE /api/Contratos/{id}: Exclui um contrato específico pelo ID.
+6.	GET /api/Contratos/nome/{nome}: Retorna uma lista de contratos filtrada por nome.
+7.	GET /api/Contratos/numero/{numero}: Retorna uma lista de contratos filtrada por número.
+8.	POST /Documento/upload/{idContrato}: Faz o upload de um documento PDF relacionado a um contrato específico pelo ID do contrato.
+9.	GET /Documento/{idContrato}: Faz o download de um documento PDF relacionado a um contrato específico pelo ID do contrato.
+10.	DELETE /Documento/{idContrato}: Remove um documento PDF relacionado a um contrato específico pelo ID do contrato.
+
 
 ## Documentação da API com Swagger
 
@@ -63,5 +69,3 @@ A documentação da API está disponível no Swagger UI, que pode ser acessado a
 - `http://localhost:5183/swagger`
 
 A documentação do Swagger fornece informações detalhadas sobre cada rota da API, incluindo os parâmetros de entrada, os formatos de resposta e os códigos de status HTTP. Você também pode experimentar as rotas diretamente na interface do Swagger.
-
-Espero que este manual seja útil para você. Se tiver mais perguntas, sinta-se à vontade para perguntar.

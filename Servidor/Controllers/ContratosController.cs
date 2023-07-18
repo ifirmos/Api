@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Servidor.Data;
 using Servidor.DTOs;
 using Servidor.Models;
@@ -35,6 +36,36 @@ namespace Servidor.Controllers
                 _logger.LogError(ex, "Erro ao obter todos os contratos");
                 return BadRequest("Erro ao obter todos os contratos. Por favor, tente novamente mais tarde.");
             }
+        }
+
+        [HttpGet("nome/{nome}")]
+        public async Task<ActionResult<IEnumerable<Contrato>>> GetContratoPorNome(string nome)
+        {
+            var contratos = await _context.Contratos
+                .Where(c => c.Cliente.ToLower().Contains(nome.ToLower()))
+                .ToListAsync();
+
+            if (!contratos.Any())
+            {
+                return NotFound();
+            }
+
+            return contratos;
+        }
+
+        [HttpGet("numero/{numero}")]
+        public async Task<ActionResult<IEnumerable<Contrato>>> GetContratoPorNumero(string numero)
+        {
+            var contratos = await _context.Contratos
+                .Where(c => c.NumeroContrato.Contains(numero))
+                .ToListAsync();
+
+            if (!contratos.Any())
+            {
+                return NotFound();
+            }
+
+            return contratos;
         }
 
         // GET: api/Contratos/{id}

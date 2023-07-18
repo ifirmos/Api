@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0AfUMkXiI0YM6hMp04yHkbmSPccITVQl94AExVQxzzWe6TzFTWQg7CxKSd3lzAHSSiyXB+pow1RgJJnG3HDrBg==",
+  "dgSpecHash": "GR7jysLBk0GlSgZNY8u5ffpX+sbmHDBbUEn3vNsGjUkwfQ+4B9WEWmlOCXMBMflQ2LOsG7LdlOaD+ZWw5ndt6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Santana\\Desktop\\ApiContratos\\Servidor\\Servidor.csproj",
+  "projectFilePath": "C:\\Users\\Santana\\Desktop\\VERSÃO_FINAL_ApiContratos\\ApiContratos\\Servidor\\Servidor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Santana\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Santana\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
