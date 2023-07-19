@@ -1,0 +1,51 @@
+<div class="viewport-container">
+  <div class="lista-contratos-container">
+    <h2 class="titulo-contratos">Lista de Contratos</h2>
+    <mat-table [dataSource]="contratos" class="mat-elevation-z8">
+
+      <!-- Cliente Column -->
+      <ng-container matColumnDef="cliente">
+        <mat-header-cell *matHeaderCellDef class="condensed-cell"> Cliente </mat-header-cell>
+        <mat-cell *matCellDef="let contrato" class="condensed-cell"> {{contrato.cliente}} </mat-cell>
+      </ng-container>
+
+      <!-- NumeroContrato Column -->
+      <ng-container matColumnDef="numeroContrato">
+        <mat-header-cell *matHeaderCellDef class="condensed-cell"> Número do Contrato </mat-header-cell>
+        <mat-cell *matCellDef="let contrato" class="condensed-cell"> {{contrato.numeroContrato}} </mat-cell>
+      </ng-container>
+
+      <!-- Valor Column -->
+      <ng-container matColumnDef="valor">
+        <mat-header-cell *matHeaderCellDef class="condensed-cell"> Valor </mat-header-cell>
+        <mat-cell *matCellDef="let contrato" class="condensed-cell"> {{contrato.valor | currency:'BRL'}} </mat-cell>
+      </ng-container>
+
+      <!-- DataAssinatura Column -->
+      <ng-container matColumnDef="dataAssinatura">
+        <mat-header-cell *matHeaderCellDef class="condensed-cell"> Data de Assinatura </mat-header-cell>
+        <mat-cell *matCellDef="let contrato" class="condensed-cell"> {{contrato.dataAssinatura | date:'dd/MM/yyyy'}} </mat-cell>
+      </ng-container>
+
+      <!-- Ações Column -->
+      <ng-container matColumnDef="acoes">
+        <mat-header-cell *matHeaderCellDef> Ações </mat-header-cell>
+        <mat-cell *matCellDef="let contrato">
+          <button mat-raised-button class= "espacamento-botao" color="primary" [routerLink]="['/editar-contrato', contrato.id]">Editar</button>
+          <button mat-raised-button class="botao-excluir espacamento-botao" (click)="deleteContrato(contrato.id)">Excluir</button>
+          <button mat-icon-button class="botao-download" (click)="downloadDocumento(contrato.id)">
+            <mat-icon>cloud_download</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+      <!-- Header row -->
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <!-- Row definition -->
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    </mat-table>
+    <div class="botao-voltar">
+      <button mat-raised-button color="primary" (click)="goBack()">Voltar</button>
+    </div>
+  </div>
+</div>

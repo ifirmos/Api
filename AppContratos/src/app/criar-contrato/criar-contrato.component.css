@@ -1,0 +1,49 @@
+.criar-contrato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 1em;
+  height: 100vh; /* 100% da altura da viewport */
+}
+
+.full-width-card {
+  width: 100%;
+  max-width: 800px;
+}
+
+.full-width-input {
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.titulo {
+  margin-bottom: 1em;
+  color: #e4b430;
+}
+
+.toast {
+  font-size: 1.5em; /* aumenta o tamanho da fonte */
+  border-radius: 15px; /* adiciona bordas arredondadas */
+}
+
+.toast-success {
+  background-color: #28a745; /* altera a cor de fundo das notificações de sucesso */
+}
+
+.toast-error {
+  background-color: #dc3545; /* altera a cor de fundo das notificações de erro */
+}
+
+.toast-info {
+  background-color: #17a2b8; /* altera a cor de fundo das notificações de informação */
+}
+
+.toast-warning {
+  background-color: #ffc107; /* altera a cor de fundo das notificações de aviso */
+}
+

@@ -1,0 +1,39 @@
+<!-- src/app/editar-contrato/editar-contrato.component.html -->
+<div class="editar-contrato-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Editar Contrato</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="ContratoForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+        <mat-form-field appearance="fill">
+          <mat-label>Nome do Cliente</mat-label>
+          <input matInput formControlName="cliente">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Número do Contrato</mat-label>
+          <input matInput formControlName="numeroContrato">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Valor do Contrato</mat-label>
+          <input matInput formControlName="valorContrato">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Data de Assinatura</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="dataAssinatura">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <input type="file" (change)="onFileChange($event)" accept=".pdf" formControlName="documento">
+
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="ContratoForm.invalid">Salvar</button>
+        <button mat-raised-button color="secondary" type="button" (click)="goBack()">Voltar</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

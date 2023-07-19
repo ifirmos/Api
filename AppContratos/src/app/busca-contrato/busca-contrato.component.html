@@ -1,0 +1,49 @@
+<h1>Busca de contratos</h1>
+<div class="busca-contrato">
+  <mat-form-field>
+    <mat-label>Tipo de busca</mat-label>
+    <mat-select [(ngModel)]="tipoBusca">
+      <mat-option value="nome">Nome</mat-option>
+      <mat-option value="numero">Número do contrato</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="termoBusca" placeholder="Digite sua busca">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="buscar()">Buscar</button>
+  <div *ngIf="contratos.length > 0">
+    <h2>Resultados da busca:</h2>
+    <mat-table [dataSource]="contratos" class="mat-elevation-z8">
+
+      <!-- Cliente Column -->
+      <ng-container matColumnDef="cliente">
+        <mat-header-cell *matHeaderCellDef> Nome do Cliente </mat-header-cell>
+        <mat-cell *matCellDef="let contrato"> {{contrato.cliente}} </mat-cell>
+      </ng-container>
+
+      <!-- NumeroContrato Column -->
+      <ng-container matColumnDef="numeroContrato">
+        <mat-header-cell *matHeaderCellDef> Número do Contrato </mat-header-cell>
+        <mat-cell *matCellDef="let contrato"> {{contrato.numeroContrato}} </mat-cell>
+      </ng-container>
+
+      <!-- DataAssinatura Column -->
+      <ng-container matColumnDef="dataAssinatura">
+        <mat-header-cell *matHeaderCellDef> Data de Assinatura </mat-header-cell>
+        <mat-cell *matCellDef="let contrato"> {{contrato.dataAssinatura | date: 'dd/MM/yyyy'}} </mat-cell>
+      </ng-container>
+
+      <!-- Valor Column -->
+      <ng-container matColumnDef="valor">
+        <mat-header-cell *matHeaderCellDef> Valor do Contrato </mat-header-cell>
+        <mat-cell *matCellDef="let contrato"> R$ {{contrato.valor | number: '1.2-2'}} </mat-cell>
+      </ng-container>
+
+      <!-- Header row -->
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <!-- Row definition -->
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    </mat-table>
+  </div>
+</div>

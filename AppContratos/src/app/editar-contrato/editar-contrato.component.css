@@ -1,0 +1,11 @@
+/* editar-contrato.component.css */
+.editar-contrato-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+

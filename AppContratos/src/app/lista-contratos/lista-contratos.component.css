@@ -1,0 +1,49 @@
+
+
+.viewport-container {
+  padding: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+.titulo-contratos {
+  color: #e4b430;
+}
+
+.lista-contratos-container {
+  width: 80%;
+}
+
+.condensed-cell {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.botao-editar{
+  /* Estilos para o botão editar */
+  background-color: rgba(0, 0, 255, 0.594) !important;
+  color: white !important;
+}
+
+.botao-excluir{
+  /* Estilos para o botão excluir */
+  background-color: rgba(247, 71, 71, 0.627) !important;
+  color: white !important;
+}
+
+.botao-download{
+  /* Estilos para o botão download */
+  background-color:transparent !important;
+  color: rgb(75, 134, 71) !important;
+}
+
+.botao-voltar{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.espacamento-botao {
+  margin-right: 10px;
+}

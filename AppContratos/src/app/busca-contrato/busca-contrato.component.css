@@ -1,0 +1,51 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #e4b430;
+}
+
+.busca-contrato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 80vw; /* Limit the width to 80% of the viewport width */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.mat-card {
+  width: 400px; /* Updated from 200px */
+  height: auto; /* Updated from 100px */
+  margin: 1em; /* Margin around the cards */
+  border-radius: 15px;
+  font-size: 18px;
+  color: #f3f3f3; /* Light color for the text on the cards */
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow around the card */
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create four columns */
+  gap: 1em;
+  padding: em;
+}
+
+.mat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Bigger shadow when mouse is over the card */
+}
+
+.resultado {
+color: azure;
+}

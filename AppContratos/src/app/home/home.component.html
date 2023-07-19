@@ -1,0 +1,28 @@
+<!-- src/app/home/home.component.html -->
+<h1 class="title">Gestão de Contratos</h1>
+<div class="menu">
+  <mat-card class="card" [@hover]="hoverState1" (mouseover)="hover(1)" (mouseout)="noHover(1)">
+    <a routerLink="/lista-contratos">
+      <mat-card-title>Listar Contratos</mat-card-title>
+      <mat-card-subtitle>Acesse a lista completa de contratos</mat-card-subtitle>
+      <mat-card-content>
+      </mat-card-content>
+    </a>
+  </mat-card>
+  <mat-card class="card" [@hover]="hoverState2" (mouseover)="hover(2)" (mouseout)="noHover(2)">
+    <a routerLink="/criar-contrato/">
+      <mat-card-title>Incluir Contrato</mat-card-title>
+      <mat-card-subtitle>Crie um novo contrato</mat-card-subtitle>
+      <mat-card-content>
+      </mat-card-content>
+    </a>
+  </mat-card>
+  <mat-card class="card" [@hover]="hoverState3" (mouseover)="hover(3)" (mouseout)="noHover(3)">
+    <a routerLink="/busca-contrato">
+      <mat-card-title>Buscar Contratos</mat-card-title>
+      <mat-card-subtitle>Nome ou Número do Contrato</mat-card-subtitle>
+      <mat-card-content>
+      </mat-card-content>
+    </a>
+  </mat-card>
+</div>
