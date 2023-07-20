@@ -1,8 +1,6 @@
 # Api
 Projeto de Api Mínima com Controlador em Asp Net Core + Aplicação FrontEnd Angular
 
-=======
->>>>>>> 4803a68 (Inicial)
 # Manual de Instruções do Projeto
 
 Este manual fornece instruções detalhadas sobre como configurar o ambiente de desenvolvimento para o backend e o frontend, restaurar as dependências e compilar o código-fonte.
